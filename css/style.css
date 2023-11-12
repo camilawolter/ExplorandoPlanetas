@@ -1,0 +1,336 @@
+/*Padrões e Estrutura das páginas com logo, menu de navegação e rodapé*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Candara, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: #272640;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img,
+fieldset {
+  border: 0;
+}
+
+p {
+  font-size: 16px;
+  margin-bottom: 1.5em;
+  line-height: 1.4em;
+  text-align: justify;
+}
+
+#cabecalho,
+#conteudo,
+#rodape {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#rodape {
+  background: #272640;
+  width: 100%;
+}
+
+#cabecalho {
+  position: relative;
+}
+
+#logo {
+  padding: 5px 0;
+  display: block;
+  float: left;
+}
+
+#logo img {
+  display: block;
+}
+
+
+#menu-principal {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  margin-right: 45px;
+}
+
+
+#menu-principal li {
+  display: inline;
+}
+
+#menu-principal a {
+  display: block;
+  float: left;
+  font-size: 18px;
+  text-decoration: none;
+  color: #333333;
+  margin-left: 32px;
+}
+
+#menu-principal a:hover,
+#menu-principal a.ativo {
+  color: rgb(51, 75, 114);
+}
+
+#menu-principal a.ativo {
+  font-weight: bold;
+}
+
+#conteudo {
+  margin: 30px auto;
+}
+
+#conteudo-principal {
+  float: left;
+  width: 620px;
+  padding: 20px;
+}
+
+#conteudo-secundario {
+  float: right;
+  width: 280px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+#telefone-email {
+  float: left;
+  font-size: 16px;
+  color: #FFF;
+  margin: 12px;
+}
+
+#telefone-email span.ddd {
+  font-size: 0.8em;
+}
+
+#endereco {
+  float: right;
+  text-align: right;
+  color: #FFF;
+  font-size: 14px;
+  margin: 12px;
+}
+
+#copyright {
+  font-size: 11px;
+  color: #d9d9d9;
+  clear: both;
+  display: block;
+  padding: 1em 0;
+  margin-left: 5px;
+}
+
+/* Estilização página principal */
+#conteudo-principal h1 {
+  font-size: 36px;
+  margin-bottom: 0.5em;
+}
+
+#conteudo-principal h2,
+#conteudo-secundario h1 {
+  font-size: 24px;
+  margin-bottom: 0.5em;
+}
+
+#conteudo-secundario p {
+  font-size: 14px;
+}
+
+#conteudo-principal ul,
+#conteudo-principal ol {
+  font-size: 16px;
+  margin-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+
+#bd-home #conteudo-secundario,
+#conteudo-secundario h1 {
+  background: #272640;
+  color: #FFF;
+}
+
+#bd-home #conteudo-secundario a {
+  color: #e0e0e0;
+}
+
+#bd-home #conteudo-principal p a {
+  color: #5a5797;
+}
+
+#foto-principal {
+  height: 200px;
+  background: url("../img/ima.avif") no-repeat center top;
+  background-size: 100%;
+}
+
+#foto-secundaria {
+  height: 150px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background: url("../img/sist.png") no-repeat center;
+}
+
+#foto-baixo {
+  margin-bottom: 10px;
+  height: 250px;
+  background: url("../img/sist2.png") no-repeat center;
+}
+
+.grupo::before,
+.grupo::after {
+  content: " ";
+  display: block;
+}
+
+.grupo::after {
+  clear: both;
+}
+
+/* Estilização da tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+th,
+tr:last-child {
+  background-color: #272640;
+  color: white;
+}
+
+#outros-planetas {
+  text-align: center;
+}
+
+#external-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#external-link:hover {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#galaxia  {
+  float: right;
+  width: 280px;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+/* Estilização da lista ordenada */
+#lista ol {
+  padding: 0;
+}
+
+#lista li {
+  padding: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+#lista li:nth-child(even) {
+  background-color: #e6e6e6;
+}
+
+#lista li:nth-child(odd) {
+  background-color: #d3d3d3;
+}
+
+#tele  {
+  float: right;
+  width: 280px;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+
+/* Estilização do formulário*/
+
+#formulario  {
+  float: left;
+  margin-bottom: 5px;
+  width: 50px;
+  padding: 10px;
+  border-radius: 20%;
+}
+
+.formularioContato {
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: #272640fb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formularioContato label {
+  color: #c6c6ce;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  font-family: 'open_sansbold';
+}
+
+.formularioContato input[type="text"],
+.formularioContato textarea,
+.formularioContato select {
+  font-size: 1em;
+  color: #272640;
+  border: 1px #272640 solid;
+  border-radius: 4px;
+  padding: 5px;
+  outline: none;
+  transition: 0.3s;
+  width: 100%;
+}
+
+
+.formularioContato button.btn-envia {
+  background-color: rgb(57, 22, 139);
+  height: 50px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  border-radius: 4px;
+  border: 0;
+  padding: 0.8em 0em;
+  color: #fff;
+  font-size: 1.3em;
+  font-family: 'open_sansbold';
+  text-align: center;
+  transition: 0.3s;
+}
+
+.formularioContato button.btn-envia:hover {
+  font-weight: bold;
+}

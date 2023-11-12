@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="HTML, CSS">
+  <meta name="author" content="Camila Wolter">
+  <title>Contato - Explorando Planetas</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body id="bd-home">
+  <div id="site">
+    <header>
+      <img src="img/logo.png" alt="Logo do Site">
+      <nav id="menu-principal">
+        <ul class="grupo">
+          <li><a href="index.html">Página Inicial</a></li>
+          <li><a href="pagina2.html">Informações</a></li>
+          <li><a href="pagina3.html">Descoberta</a></li>
+          <li><a href="pagina4.html" class="ativo">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="foto-principal"></div>
+    <div id="conteudo" class="grupo">
+      <section id="conteudo-principal">
+        <img src="img/form.png" alt="formulario" id="formulario">
+        <h1>Formulário Contato</h1>
+        <div class="formularioContato">
+
+          <form action="#" method="post">
+            <label>
+              <span> Nome</span>
+              <input type="text" name="nome" required="">
+            </label>
+
+            <label>
+              <span>E-mail</span>
+              <input type="text" name="email" class="fade_8S">
+            </label>
+
+            <label>Como você encontrou o site?</label>
+            <select name="encontrou" id="encontrou">
+              <option value="busca">Pesquisa na Web</option>
+              <option value="indicacao">Indicação de Amigo</option>
+              <option value="rede_social">Rede Social</option>
+              <option value="outro">Outro</option>
+            </select>
+
+            <label>
+              <span>Qual sua opinião sobre o conteúdo?</span>
+              <textarea name="mensagem" rows="3" required=""></textarea>
+            </label>
+
+            <label>Que recursos você gostaria de ver no site?</label>
+            <input type="checkbox" id="recursos1" name="recursos[]" value="fórum"> <label for="recursos1">Fórum</label>
+            <input type="checkbox" id="recursos2" name="recursos[]" value="chat"> <label for="recursos2">Chat ao
+              Vivo</label>
+            <input type="checkbox" id="recursos3" name="recursos[]" value="mais_artigos"> <label for="recursos3">Mais
+              Artigos</label>
+              <br>
+              
+            <label>Qual sua preferência de sistema planetário?</label>
+            <input type="radio" id="sistema_solar" name="sistema_planetario" value="solar" checked> <label
+              for="sistema_solar">Sistema Solar</label>
+            <input type="radio" id="outro_sistema" name="sistema_planetario" value="outro"> <label
+              for="outro_sistema">Outro Sistema</label>
+
+            <button class="btn-envia" title="Enviar">Enviar</button>
+          </form>
+        </div>
+
+      </section>
+    </div>
+    <footer id="rodape">
+      <p id="telefone-email">
+        camilacardos.pl006@academico.ifsul.edu.br
+        <br>
+        <span class="ddd">53</span> 991688519
+      </p>
+
+      <p id="endereco">
+        Rua Gonçalves Chaves, 3218
+        <br>
+        CEP 96170-000
+        <br>
+        São Lourenço do Sul - RS
+      </p>
+
+      <small id="copyright">
+        &copy; IFSUL - Instituto Federal Sul-rio-grandense.
+      </small>
+    </footer>
+  </div>
+</body>
+
+</html>
